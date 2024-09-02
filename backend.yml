@@ -20,7 +20,7 @@
       ansible.builtin.user:
         name: expense
 
-    - name: cp backend.service /etc/systemd/system/backend.service
+    - name: cp backend.service to /etc/systemd/system
       ansible.builtin.copy:
         src: backend.service
         dest: /etc/systemd/system/backend.service
@@ -59,6 +59,6 @@
     - name : start service
       ansible.builtin.service:
         name: backend
-        state: restarted
+        state: started
         enabled: yes
 
