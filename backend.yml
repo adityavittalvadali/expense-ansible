@@ -43,8 +43,8 @@
     - name: Install MYSQL CLient and
       ansible.builtin.dnf:
         name:
-          - mysql
-          - python3-PyMySQL
+        - mysql
+        - python3-PyMySQL
         state: present
 
     - name: Load schema
