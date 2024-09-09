@@ -1,7 +1,4 @@
-- name: MYSQL Playbook
-  hosts: all
-  become: yes
-  tasks:
+
     - name: Setup Prompt
       ansible.builtin.shell: set-prompt mysql
 
