@@ -1,4 +1,3 @@
-
     - name: Install the Nginx package
       ansible.builtin.dnf:
         name: nginx
