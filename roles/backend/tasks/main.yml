@@ -1,6 +1,4 @@
-    - name: Setup Prompt
-      ansible.builtin.shell: set-prompt backend
-
+##check
     - name: module disable nodejs -y
       ansible.builtin.shell: dnf module disable nodejs -y
 
@@ -17,7 +15,7 @@
         name: expense
 
     - name: cp backend.service to /etc/systemd/system
-      ansible.builtin.copy:
+      ansible.builtin.template:
         src: backend.service
         dest: /etc/systemd/system/backend.service
 
