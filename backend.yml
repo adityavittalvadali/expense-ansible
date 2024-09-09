@@ -52,7 +52,7 @@
         state: import
         name: all
         target: /app/schema/backend.sql
-        login_host: 172.31.87.232
+        login_host: mysql-dev.doubtfree.online
         login_user: root
         login_password: ExpenseApp@1
 
